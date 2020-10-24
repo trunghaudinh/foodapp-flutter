@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/fakeData.dart';
-import 'package:food_app/models/category.dart';
 import 'category_item.dart';
-class CategoryView extends StatelessWidget {
+class CategoryPage extends StatelessWidget {
+  static const String ROUTER_NAME = "/CategoryPage";
   @override
   Widget build(BuildContext context) {
     return GridView(

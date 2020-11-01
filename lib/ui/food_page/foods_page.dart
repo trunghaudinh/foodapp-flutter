@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:food_app/fakeData.dart';
 import 'package:food_app/models/category.dart';
 import 'package:food_app/models/food.dart';
+import 'package:food_app/ui/food_page/detail_food_page.dart';
 
 class FoodPage extends StatelessWidget {
   static const String ROUTER_NAME = "/FoodPage";
@@ -22,12 +23,14 @@ class FoodPage extends StatelessWidget {
         title: Text('Menu\'s ${category.content}'),
       ),
       body: Center(
-        child: ListView.builder(
+        child: listFood.length > 0 ? ListView.builder(
             itemCount: listFood.length,
             itemBuilder: (context, index) {
               Food food = listFood[index];
               return InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, DetailFoodPage.ROUTER_NAME,arguments: {'food' : food});
+                },
                 child: Stack(
                   children: <Widget>[
                     Container(
@@ -90,7 +93,8 @@ class FoodPage extends StatelessWidget {
                   ],
                 ),
               );
-            }),
+            }) :
+        Text('No Food Found'),
       ),
     );
   }

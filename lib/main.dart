@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/ui/category/category_page.dart';
+import 'package:food_app/ui/food_page/detail_food_page.dart';
 import 'package:food_app/ui/food_page/foods_page.dart';
 
 void main() => runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/FoodPage': (context) => FoodPage(),
         '/CategoryPage': (context) => CategoryPage(),
+        '/DetailFoodPage': (context) => DetailFoodPage(),
       },
       home: Scaffold(
         appBar: AppBar(

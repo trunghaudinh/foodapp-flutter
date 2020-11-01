@@ -20,7 +20,7 @@ List<Category> FAKE_CATEGORIES = [
 var FAKE_FOODS = [
   Food('Sushi', 'https://image2.tienphong.vn/665x449/Uploaded/2020/rkznae/2019_11_14/goc_canh_bao_an_nhieu_sushi_de_bi_nhiem_khuan_0a0e6807_gdef.jpg',
       Duration(minutes: 25), Complexity.Hard,
-      1, ['Sushi-meshi','Nori','Ramen']),
+      1, ['Sushi-meshi','Nori','Ramen','kimchi','naruto','sasuke','Sushi-meshi','Nori','Ramen','kimchi','naruto','sasuke']),
 
   Food('Sushi2', 'https://image2.tienphong.vn/665x449/Uploaded/2020/rkznae/2019_11_14/goc_canh_bao_an_nhieu_sushi_de_bi_nhiem_khuan_0a0e6807_gdef.jpg',
       Duration(minutes: 15), Complexity.Hard,
